@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: purple;
+    width: 95vw;
+}
+#logoSection{
+    display: flex;
+    align-items: center;
+}
+#headerLogo{
+    width: 5vw;
+}
+#headerNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    width: 50vw;
+    height: 10vh;    
+}
+#navButton{
+    background-color: rgb(97, 96, 96);
+    color: white;
+    padding: 0.2vw 1vw 0.2vw 1vw;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/*-------------------------------------------------------------------------------
+                                Carrusel
+---------------------------------------------------------------------------------*/
+
+/* Slideshow container */
+.seccionFotosCarrusel {
+  max-width: 75vw;
+  position: relative;
+  margin: auto;
+}
+
+/* Botones de Anterior y Siguiente */
+.diapoAnterior, .diapoSiguiente {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Se empuja el botón de siguiente a la derecha */
+.diapoSiguiente {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* hover Flechas Carrusel */
+.diapoAnterior:hover, .diapoSiguiente:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto de la imagen del carrusel */
+.textoImagen {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.seccionPuntosCarrusel{
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.puntosCarrusel {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .puntosCarrusel:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fundido {
+  animation-name: fundido;
+  animation-duration: 1.5s;
+}
+
+@keyframes fundido {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+footer{
+
+}

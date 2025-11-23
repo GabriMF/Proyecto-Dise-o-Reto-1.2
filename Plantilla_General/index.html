@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/carrusel.js"></script>
+    <title>Home</title>
+</head>
+<body onload="mostrarDiapositivas()">
+    <header>
+        <div id="logoSection">
+            <a href="">
+                <img id="headerLogo" src="../Plantilla_General/Resources/Logo Crown Fest.png" alt="Logo">
+            </a>
+            <select name="" id="">
+                <option value="Jazz">Jazz</option>
+                <option value="Rock">Rock</option>
+                <option value="Electrónica">Electrónica</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </div>
+        
+        <nav id="headerNav">
+            <a href="/Plantilla_General/prueba.html" id="navButton">Home</a>
+            <a href="" id="navButton">Catálogo</a>
+            <a href="" id="navButton">Servicios</a>
+            <a href="" id="navButton">Artistas</a>
+            <a href="" id="navButton">Compra</a>
+            <a href="" id="navButton">Contacto</a>
+            <a href="" id="navButton">FaQ</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Introducción del Contenedor del Carrusel -->
+        <div class="carrusel">
+            <div class="seccionFotosCarrusel">
+                
+                <div class="imagenCarrussel fundido">
+                    <img src="Resources/Logo Crown Fest.png" style="width:100%">
+                    <div class="textoImagen">Imagen Uno</div>
+                </div>
+
+                <div class="imagenCarrussel fundido">
+                    <img src="Resources/Captura de pantalla (6).png" style="width:100%">
+                    <div class="textoImagen">Imagen Dos</div>
+                </div>
+
+                <div class="imagenCarrussel fundido">
+                    <img src="Resources/Captura de pantalla (189).png" style="width:100%">
+                    <div class="textoImagen">Imagen Tres</div>
+                </div>
+
+                <!-- Botones de Anterior y Siguiente -->
+                <a class="diapoAnterior" onclick="moverDiapositiva(-1)">&#10094;</a>
+                <a class="diapoSiguiente" onclick="moverDiapositiva(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- Los Puntitos del Carrusel -->
+            <div class="seccionPuntosCarrusel">
+                <span class="puntosCarrusel" onclick="diapositivaActual(1)"></span>
+                <span class="puntosCarrusel" onclick="diapositivaActual(2)"></span>
+                <span class="puntosCarrusel" onclick="diapositivaActual(3)"></span>
+            </div>
+        </div>
+        
+        <!-- Introducción del Contenedor de las tarjetas -->
+        <div>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
