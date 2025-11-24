@@ -1,3 +1,7 @@
+
+/*-------------------------------------------------------------------------------
+                              Ajustes Generales
+---------------------------------------------------------------------------------*/
 body{
     display: flex;
     flex-direction: column;
@@ -5,18 +9,47 @@ body{
     align-items: center;
 }
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: purple;
-    width: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: purple;
+  width: 95vw;
+  margin-bottom: 2vh;
 }
+h1{
+  text-align: center;
+}
+
+/*-------------------------------------------------------------------------------
+                                header
+---------------------------------------------------------------------------------*/
 #logoSection{
     display: flex;
     align-items: center;
 }
 #headerLogo{
     width: 5vw;
+}
+.contenedorOpcionesMenuDesplegable{
+  display: none;
+  position: absolute;
+  overflow: auto;
+  
+}
+#opcionesEventos{
+  border-radius: 15px;
+  background-color: aqua;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 1vh 1vw 1vh 1vw;
+  margin-bottom: 1vh;
+  z-index: 10;
+}
+.menuDesplegableEventos:hover .contenedorOpcionesMenuDesplegable{
+  display: flex;
+  flex-direction: column;
+  
 }
 #headerNav{
     display: flex;
@@ -39,7 +72,7 @@ header{
                                 Carrusel
 ---------------------------------------------------------------------------------*/
 
-/* Slideshow container */
+/* Contenedor Fotos Carrusel */
 .seccionFotosCarrusel {
   max-width: 75vw;
   position: relative;
@@ -88,7 +121,7 @@ header{
     text-align: center;
 }
 
-/* The dots/bullets/indicators */
+/* Puntitos del Carrusel */
 .puntosCarrusel {
   cursor: pointer;
   height: 15px;
@@ -104,7 +137,7 @@ header{
   background-color: #717171;
 }
 
-/* Fading animation */
+/* Animación de fundido */
 .fundido {
   animation-name: fundido;
   animation-duration: 1.5s;
@@ -115,7 +148,68 @@ header{
   to {opacity: 1}
 }
 
+/*-------------------------------------------------------------------------------
+                                Tarjetas
+---------------------------------------------------------------------------------*/
+.seccionTarjetas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tarjeta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  margin: 2vw;
+  padding-top: 1vw;
+  border-radius: 15px;
+  text-align: center;
+}
+#botonTarjeta{
+  text-decoration: none;
+  color: black;
+}
+.imagenTarjeta{
+  width: 15vw;
+}
+.tarjeta:hover{
+  animation-name: fundidoColor;
+  animation-duration: 0.8s;
+  transform: translateY(+10px);
+  background-color: #969696;
+}
+@keyframes fundidoColor{
+  from {opacity: .5}
+  to {opacity: 1}
+}
+/*-------------------------------------------------------------------------------
+                                Banner
+---------------------------------------------------------------------------------*/
+.banner{
+  max-width: 80vw;
+}
 
+/*-------------------------------------------------------------------------------
+                                Catálogo
+---------------------------------------------------------------------------------*/
+.oferta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #aaa9a9;
+  border-radius: 15px;
+  padding: 1vh 1vw 1vh 1vw;
+  margin: 2vh 0vw 2vh 0;
+}
+.botonComprar{
+  background-color: black;
+  color: antiquewhite;
+  border-radius: 15px;
+  padding: 1vh 1vw 1vh 1vw;
+  border: 0px;
+}
 
 footer{
 
