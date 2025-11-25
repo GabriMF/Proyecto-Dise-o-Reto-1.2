@@ -1,0 +1,323 @@
+
+/*-------------------------------------------------------------------------------
+                              Ajustes Generales
+---------------------------------------------------------------------------------*/
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: purple;
+  width: 95vw;
+  margin-bottom: 2vh;
+}
+h1{
+  text-align: center;
+}
+
+/*-------------------------------------------------------------------------------
+                                header
+---------------------------------------------------------------------------------*/
+#logoSection{
+    display: flex;
+    align-items: center;
+}
+#headerLogo{
+    width: 5vw;
+}
+.contenedorOpcionesMenuDesplegable{
+  display: none;
+  position: absolute;
+  overflow: auto;
+  
+}
+#opcionesEventos{
+  border-radius: 15px;
+  background-color: aqua;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 1vh 1vw 1vh 1vw;
+  margin-bottom: 1vh;
+  z-index: 10;
+}
+.menuDesplegableEventos:hover .contenedorOpcionesMenuDesplegable{
+  display: flex;
+  flex-direction: column;
+  
+}
+#headerNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    width: 50vw;
+    height: 10vh;    
+}
+#navButton{
+    background-color: rgb(97, 96, 96);
+    color: white;
+    padding: 0.2vw 1vw 0.2vw 1vw;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/*-------------------------------------------------------------------------------
+                                Carrusel
+---------------------------------------------------------------------------------*/
+
+/* Contenedor Fotos Carrusel */
+.seccionFotosCarrusel {
+  max-width: 75vw;
+  position: relative;
+  margin: auto;
+}
+
+/* Botones de Anterior y Siguiente */
+.diapoAnterior, .diapoSiguiente {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Se empuja el botón de siguiente a la derecha */
+.diapoSiguiente {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* hover Flechas Carrusel */
+.diapoAnterior:hover, .diapoSiguiente:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto de la imagen del carrusel */
+.textoImagen {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.seccionPuntosCarrusel{
+    text-align: center;
+}
+
+/* Puntitos del Carrusel */
+.puntosCarrusel {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .puntosCarrusel:hover {
+  background-color: #717171;
+}
+
+/* Animación de fundido */
+.fundido {
+  animation-name: fundido;
+  animation-duration: 1.5s;
+}
+
+@keyframes fundido {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*-------------------------------------------------------------------------------
+                                Tarjetas
+---------------------------------------------------------------------------------*/
+.seccionTarjetas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tarjeta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  margin: 2vw;
+  padding-top: 1vw;
+  border-radius: 15px;
+  text-align: center;
+}
+#botonTarjeta{
+  text-decoration: none;
+  color: black;
+}
+.imagenTarjeta{
+  width: 15vw;
+}
+.tarjeta:hover{
+  animation-name: fundidoColor;
+  animation-duration: 0.8s;
+  transform: translateY(+10px);
+  background-color: #969696;
+}
+@keyframes fundidoColor{
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+/*-------------------------------------------------------------------------------
+                                Contenido
+---------------------------------------------------------------------------------*/
+.contenido{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.contenidoReversed{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.imagenContenido{
+  max-width: 20vw;
+  margin: 2vh 2vw 2vh 2vw;
+}
+/*-------------------------------------------------------------------------------
+                                Parrafo
+---------------------------------------------------------------------------------*/
+.parrafo{
+  display: flex;
+  align-items: center;
+}
+.imagenParrafo{
+  max-width: 30vw;
+  margin: 2vh 2vw 2vh 2vw;
+}
+
+
+/*-------------------------------------------------------------------------------
+                                Banner
+---------------------------------------------------------------------------------*/
+.banner{
+  max-width: 80vw;
+}
+
+/*-------------------------------------------------------------------------------
+                                Catálogo
+---------------------------------------------------------------------------------*/
+.oferta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #aaa9a9;
+  border-radius: 15px;
+  padding: 1vh 1vw 1vh 1vw;
+  margin: 2vh 0vw 2vh 0;
+}
+.botonComprar{
+  background-color: black;
+  color: antiquewhite;
+  border-radius: 15px;
+  padding: 1vh 1vw 1vh 1vw;
+  border: 0px;
+}
+
+/*-------------------------------------------------------------------------------
+                                Formulario
+---------------------------------------------------------------------------------*/
+#formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+}
+.inputFormulario{
+  margin: 2vh 0 2vh 0;
+  width: 20vw;
+}
+#cajonTextoFormulario{
+  height: 30vh;
+}
+/*-------------------------------------------------------------------------------
+                                Desplegable
+---------------------------------------------------------------------------------*/
+.contenedorDesplegable{
+  display: flex;
+  flex-direction: column;
+}
+.desplegableFaq{
+  width: 40vw;
+  border: solid 1px;
+  margin: 1vh 0 1vh 0;
+  border-radius: 5px;
+}
+
+
+/*-------------------------------------------------------------------------------
+                                Footer
+---------------------------------------------------------------------------------*/
+
+#logosFooter{
+  width: 2vw;
+}
+#footerNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(38, 0, 255);
+    width: 50vw;
+    height: 10vh;    
+}
+#footerNavButton{
+    /* background-color: rgb(97, 96, 96); */
+    color: black;
+    padding: 0.2vw 1vw 0.2vw 1vw;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.copyrightSection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+  color: gray;
+}
+#privacyLink{
+  text-decoration: none;
+  color: gray;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95vw;
+  margin-top: 2vh;
+}

@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts/carrusel.js"></script>
-    <title>Home</title>
+    <title>Servicios</title>
 </head>
-<body onload="mostrarDiapositivas()">
+<body>
 
     <header>
         <div id="logoSection">
@@ -17,7 +16,6 @@
             <div class="menuDesplegableEventos">
                 <input type="button" value="Otros Eventos">
                 <div class="contenedorOpcionesMenuDesplegable">
-                    <a id="opcionesEventos" href="../Plantilla_Jazz/index.html">Jazz</a>
                     <a id="opcionesEventos" href="../Plantilla_Rock/index.html">Rock</a>
                     <a id="opcionesEventos" href="../Plantilla_Indie/index.html">Indie</a>
                     <a id="opcionesEventos" href="../Plantilla_Pop/index.html">Pop</a>
@@ -39,69 +37,10 @@
 
 
     <main>
-
-        <!-- Introducción del Contenedor del Carrusel -->
-        <div class="carrusel">
-            <div class="seccionFotosCarrusel">
-                
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Logo Crown Fest.png" style="width:100%">
-                    <div class="textoImagen">Imagen Uno</div>
-                </div>
-
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Captura de pantalla (6).png" style="width:100%">
-                    <div class="textoImagen">Imagen Dos</div>
-                </div>
-
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Captura de pantalla (189).png" style="width:100%">
-                    <div class="textoImagen">Imagen Tres</div>
-                </div>
-
-                <!-- Botones de Anterior y Siguiente -->
-                <a class="diapoAnterior" onclick="moverDiapositiva(-1)">&#10094;</a>
-                <a class="diapoSiguiente" onclick="moverDiapositiva(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <!-- Los Puntitos del Carrusel -->
-            <div class="seccionPuntosCarrusel">
-                <span class="puntosCarrusel" onclick="diapositivaActual(1)"></span>
-                <span class="puntosCarrusel" onclick="diapositivaActual(2)"></span>
-                <span class="puntosCarrusel" onclick="diapositivaActual(3)"></span>
-            </div>
-        </div>
-        
-        <!-- Introducción del Contenedor de las tarjetas -->
-        <div class="seccionTarjetas">
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="artistas.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artistas</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="compra.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Tickets</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="servicios.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Servicios</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="faq.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>FaQ</h2>
-                </a>
-            </div>
+        <div class="banner">
+            <img src="Resources/Logo Crown Fest.png">
         </div>
 
-        <!-- Introduccion de contenedor "Contenido" -->
         <a href="prueba.html" class="contenido">
             <img src="Resources/Logo Crown Fest.png" alt="" class="imagenContenido">
             <div class="textoContenido">
@@ -116,9 +55,16 @@
                 <p>jkhgsdfjbsdkjfs jsdfbjsdbfksdbf kjsdbfkjdfbhksjdf ksjdfbkjsdbfkjdsf kjsdfbkjdfb</p>
             </div>
         </a>
+        <a href="prueba.html" class="contenido">
+            <img src="Resources/Logo Crown Fest.png" alt="" class="imagenContenido">
+            <div class="textoContenido">
+                <h3>Novedades</h3>
+                <p>jkhgsdfjbsdkjfs jsdfbjsdbfksdbf kjsdbfkjdfbhksjdf ksjdfbkjsdbfkjdsf kjsdfbkjdfb</p>
+            </div>
+        </a>
     </main>
 
-    
+
     <footer>
         <div id="logoSection">
             <a href="index.html">
