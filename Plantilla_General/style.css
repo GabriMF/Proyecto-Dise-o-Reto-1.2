@@ -184,6 +184,44 @@ h1{
   from {opacity: .5}
   to {opacity: 1}
 }
+
+/*-------------------------------------------------------------------------------
+                                Contenido
+---------------------------------------------------------------------------------*/
+.contenido{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.contenidoReversed{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.imagenContenido{
+  max-width: 20vw;
+  margin: 2vh 2vw 2vh 2vw;
+}
+/*-------------------------------------------------------------------------------
+                                Parrafo
+---------------------------------------------------------------------------------*/
+.parrafo{
+  display: flex;
+  align-items: center;
+}
+.imagenParrafo{
+  max-width: 30vw;
+  margin: 2vh 2vw 2vh 2vw;
+}
+
+
 /*-------------------------------------------------------------------------------
                                 Banner
 ---------------------------------------------------------------------------------*/
@@ -210,6 +248,26 @@ h1{
   padding: 1vh 1vw 1vh 1vw;
   border: 0px;
 }
+
+/*-------------------------------------------------------------------------------
+                                Formulario
+---------------------------------------------------------------------------------*/
+#formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+}
+.inputFormulario{
+  margin: 2vh 0 2vh 0;
+  width: 20vw;
+}
+#cajonTextoFormulario{
+  height: 30vh;
+}
+
+
 
 /*-------------------------------------------------------------------------------
                                 Footer
