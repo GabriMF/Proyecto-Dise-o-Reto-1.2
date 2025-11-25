@@ -266,7 +266,19 @@ h1{
 #cajonTextoFormulario{
   height: 30vh;
 }
-
+/*-------------------------------------------------------------------------------
+                                Desplegable
+---------------------------------------------------------------------------------*/
+.contenedorDesplegable{
+  display: flex;
+  flex-direction: column;
+}
+.desplegableFaq{
+  width: 40vw;
+  border: solid 1px;
+  margin: 1vh 0 1vh 0;
+  border-radius: 5px;
+}
 
 
 /*-------------------------------------------------------------------------------
