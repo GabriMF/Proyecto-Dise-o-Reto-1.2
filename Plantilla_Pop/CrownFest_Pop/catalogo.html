@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crown Fest POP - Entradas</title>
+    <title>Crown Fest POP - Catálogo</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/png" href="Resources/Icono Crown Fest.png">
-
 </head>
 <body>
     <!-- Header -->
@@ -26,44 +25,63 @@
         </div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="catalogo.html">Catálogo</a>
+            <a href="catalogo.html" class="active">Catálogo</a>
             <a href="servicios.html">Servicios</a>
             <a href="artistas.html">Artistas</a>
-            <a href="compra.html" class="active">Compra</a>
+            <a href="compra.html">Compra</a>
             <a href="contacto.html">Contacto</a>
             <a href="aboutUs.html">FaQ</a>
         </nav>
     </header>
 
-    <!-- Hero Carousel -->
-    <div class="carousel">
-        <div class="carousel-inner">
-            <img id="banner" src="Resources/Icono Crown Fest.png" alt="Logo" height="300" width="500">
+    <!-- Hero Section with Poster -->
+    <div class="hero-section">
+        <div class="hero-poster">
+            <img id="poster-placeholder" src="Resources/Banner_Pop.png" alt="Banner" height="600" width="1000">
         </div>
+        <a href="entradas.html" class="btn-tickets">Comprar Tickets</a>
     </div>
 
-    <!-- Entradas Section -->
-    <div class="entradas-section">
-        <h1 class="entradas-title">Entradas</h1>
-        
-        <div class="entrada-item">
-            <h3>Abono completo 3 días + Glamping</h3>
-            <button class="btn-comprar">Comprar</button>
-        </div>
-
-        <div class="entrada-item">
-            <h3>Abono completo 3 días + Camping Standard</h3>
-            <button class="btn-comprar">Comprar</button>
-        </div>
-
-        <div class="entrada-item">
-            <h3>Entradas independientes + Camping Standard</h3>
-            <button class="btn-comprar">Comprar</button>
-        </div>
-
-        <div class="entrada-item">
-            <h3>Entradas independientes</h3>
-            <button class="btn-comprar">Comprar</button>
+    <!-- Featured Artists -->
+    <div class="featured-artists">
+        <h2>Artistas Destacados</h2>
+        <div class="artists-grid">
+            <div class="artist-card">
+                <div class="artist-image">
+                    <img id="artist-image-placeholder" src="Resources/TaylorSwift.png" alt="Logo" height="250" width="350">
+                </div>
+                <h3>1º Taylor Swift</h3>
+            </div>
+            <div class="artist-card">
+                <div class="artist-image">
+                    <img id="artist-image-placeholder" src="Resources/Beyonce.png" alt="Logo" height="250" width="350">
+                </div>
+                <h3>2º Beyoncé</h3>
+            </div>
+            <div class="artist-card">
+                <div class="artist-image">
+                    <img id="artist-image-placeholder" src="Resources/LadyGaga.png" alt="Logo" height="250" width="350">
+                </div>
+                <h3>3º Lady Gaga</h3>
+            </div>
+            <div class="artist-card">
+                <div class="artist-image">
+                    <img id="artist-image-placeholder" src="Resources/TheWeeknd.png" alt="Logo" height="250" width="350">
+                </div>
+                <h3>4º The Weeknd</h3>
+            </div>
+            <div class="artist-card">
+                <div class="artist-image">
+                    <img id="artist-image-placeholder" src="Resources/PaulMcCartney.png" alt="Logo" height="250" width="350">
+                </div>
+                <h3>5º Paul McCartney</h3>
+            </div>
+            <div class="artist-card">
+                <div class="artist-image">
+                    <img id="artist-image-placeholder" src="Resources/Rihanna.png" alt="Logo" height="250" width="350">
+                </div>
+                <h3>6º Rihanna</h3>
+            </div>
         </div>
     </div>
 
@@ -72,7 +90,7 @@
         <div class="footer-content">
             <img id="footerLogo" src="Resources/Logo Crown Fest Footer.png" alt="Logo" height="110" width="120">
             <div class="footer-links">
-                <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="catalogo.html">Catálogo</a>
             <a href="servicios.html">Servicios</a>
             <a href="artistas.html">Artistas</a>
@@ -92,6 +110,5 @@
             <a href="avisoLegal.html">Privacy Policy</a>
         </div>
     </footer>
-
 </body>
 </html>

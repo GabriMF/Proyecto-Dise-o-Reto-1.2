@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crown Fest POP - Contacto</title>
+    <title>Crown Fest POP - Servicios</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/png" href="Resources/Icono Crown Fest.png">
+
 </head>
 <body>
     <!-- Header -->
@@ -26,10 +27,10 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="catalogo.html">Catálogo</a>
-            <a href="servicios.html">Servicios</a>
+            <a href="servicios.html" class="active">Servicios</a>
             <a href="artistas.html">Artistas</a>
             <a href="compra.html">Compra</a>
-            <a href="contacto.html" class="active">Contacto</a>
+            <a href="contacto.html">Contacto</a>
             <a href="aboutUs.html">FaQ</a>
         </nav>
     </header>
@@ -37,27 +38,46 @@
     <!-- Hero Carousel -->
     <div class="carousel">
         <div class="carousel-inner">
-            <img id="banner" src="Resources/Icono Crown Fest.png" alt="Logo" height="300" width="500">
+            <img id="banner" src="Resources/Servicios.png" alt="Logo" height="300" width="500">
         </div>
     </div>
 
-    <!-- Contact Section -->
-    <div class="contact-section">
-        <h1>Contáctanos</h1>
-        <div class="contact-form">
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" placeholder="Name">
+    <!-- Services Section -->
+    <div class="services-section">
+        <!-- Camping -->
+        <div class="service-item">
+            <div class="service-image">
+                <img id="service-image-placeholder" src="Resources/ServicioCamping.png" alt="Logo" height="200" width="250">
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email">
+            <div class="service-content">
+                <h2>Camping</h2>
+                <p>Lorem ipsum dolor sit amet et delectus accommodate his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos</p>
+                <a href="#" class="btn">Conocer más</a>
             </div>
-            <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea id="message" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+
+        <!-- Comida -->
+        <div class="service-item">
+            <div class="service-image">
+                <img id="service-image-placeholder" src="Resources/ServicioComida.png" alt="Logo" height="200" width="250">
             </div>
-            <button type="button" class="btn-send">Send</button>
+            <div class="service-content">
+                <h2>Comida</h2>
+                <p>Lorem ipsum dolor sit amet et delectus accommodate his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos</p>
+                <a href="#" class="btn">Conocer más</a>
+            </div>
+        </div>
+
+        <!-- Puntos Violeta -->
+        <div class="service-item">
+            <div class="service-image">
+                <img id="service-image-placeholder" src="Resources/ServicioPuntoVioleta.png" alt="Logo" height="200" width="250">
+            </div>
+            <div class="service-content">
+                <h2>Puntos Violeta</h2>
+                <p>Lorem ipsum dolor sit amet et delectus accommodate his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos</p>
+                <a href="#" class="btn">Conocer más</a>
+            </div>
         </div>
     </div>
 
@@ -66,7 +86,7 @@
         <div class="footer-content">
             <img id="footerLogo" src="Resources/Logo Crown Fest Footer.png" alt="Logo" height="110" width="120">
             <div class="footer-links">
-                <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="catalogo.html">Catálogo</a>
             <a href="servicios.html">Servicios</a>
             <a href="artistas.html">Artistas</a>
@@ -86,6 +106,5 @@
             <a href="avisoLegal.html">Privacy Policy</a>
         </div>
     </footer>
-
 </body>
 </html>
