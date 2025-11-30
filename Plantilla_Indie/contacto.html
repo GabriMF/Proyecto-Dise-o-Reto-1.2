@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crown Fest Indie - Contacto</title>
+    <!-- Enlace al estilo maestro -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" type="image/png" href="Resources/Icono-Crown-Fest-Indie.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header Moderno (con enlaces a la versión 3) -->
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="Resources/Logo Crown Fest.png" alt="Logo" />
+        </a>
+        <select class="dropdown">
+          <option>Crown Fest INDIE</option>
+          <option>Crown Fest ROCK</option>
+          <option>Crown Fest POP</option>
+          <option>Crown Fest JAZZ</option>
+          <option>Crown Fest DEMBOW</option>
+          <option>Otros Eventos</option>
+        </select>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="artistas.html">Artistas</a>
+        <a href="compra.html">Compra</a>
+        <a href="contacto.html" class="active">Contacto</a>
+        <a href="aboutUs.html">FaQ</a>
+      </nav>
+    </header>
+
+    <!-- Hero Header -->
+    <!-- Usamos la imagen específica de Contacto que tenía tu compañero como fondo -->
+    <div
+      class="hero-header"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('Resources/Contacto.png');
+      "
+    >
+      <h1>Contáctanos</h1>
+    </div>
+
+    <!-- Formulario de Contacto (Estilo tarjeta centrada) -->
+    <main class="seccion-contacto">
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" placeholder="Tu nombre completo" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" placeholder="tucorreo@ejemplo.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea
+            id="message"
+            placeholder="Escribe tu mensaje aquí..."
+          ></textarea>
+        </div>
+
+        <!-- Usamos la clase .btn-enviar definida en el CSS moderno -->
+        <button type="button" class="btn-enviar">Enviar Mensaje</button>
+      </form>
+    </main>
+
+    <!-- Footer Moderno -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="Resources/Logo-Crown-Fest-Footer.png" alt="Logo Footer" />
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="artistas.html">Artistas</a>
+          <a href="compra.html">Tickets</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://instagram.com" class="social-icon-wrapper">
+            <img src="Resources/Instagram.png" alt="IG" />
+          </a>
+          <a href="https://facebook.com" class="social-icon-wrapper">
+            <img src="Resources/Facebook.png" alt="FB" />
+          </a>
+          <a href="https://x.com" class="social-icon-wrapper">
+            <img src="Resources/X.png" alt="X" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Crown Fest. Todos los derechos reservados.</span>
+        <a href="avisoLegal.html">Política de Privacidad</a>
+      </div>
+    </footer>
+  </body>
+</html>
