@@ -64,4 +64,4 @@ function mostrarDiapositivas(n) {
     diapositivas[diapositivaInicial - 1].classList.add("activa");
   }
 }
-    
+  

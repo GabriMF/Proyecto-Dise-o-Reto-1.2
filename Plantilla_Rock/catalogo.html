@@ -1,134 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts/carrusel.js"></script>
-    <title>Catálogo</title>
-</head>
-<body onload="mostrarDiapositivas()">
-
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crown Fest Rock - Catálogo</title>
+    <!-- CSS en ruta relativa -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" type="image/png" href="Resources/Icono-Crown-Fest.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header Moderno -->
     <header>
-        <div id="logoSection">
-            <a href="index.html">
-                <img id="headerLogo" src="../Plantilla_General/Resources/Logo Crown Fest.png" alt="Logo">
-            </a>
-            <div class="menuDesplegableEventos">
-                <input type="button" value="Otros Eventos">
-                <div class="contenedorOpcionesMenuDesplegable">
-                    <a id="opcionesEventos" href="../Plantilla_Jazz/index.html">Jazz</a>
-                    <a id="opcionesEventos" href="../Plantilla_Indie/index.html">Indie</a>
-                    <a id="opcionesEventos" href="../Plantilla_Pop/index.html">Pop</a>
-                    <a id="opcionesEventos" href="../Plantilla_Dembow/index.html">Dembow</a>
-                </div>
-            </div>
-        </div>
-        
-        <nav id="headerNav">
-            <a href="index.html" id="navButton">Home</a>
-            <a href="catalogo.html" id="navButton">Catálogo</a>
-            <a href="servicios.html" id="navButton">Servicios</a>
-            <a href="artistas.html" id="navButton">Artistas</a>
-            <a href="compra.html" id="navButton">Compra</a>
-            <a href="contacto.html" id="navButton">Contacto</a>
-            <a href="faq.html" id="navButton">FaQ</a>
-        </nav>
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="Resources/Logo Crown Fest.png" alt="Logo" />
+        </a>
+        <select class="dropdown">
+          <option>Crown Fest ROCK</option>
+          <option>Crown Fest POP</option>
+          <option>Crown Fest INDIE</option>
+          <option>Crown Fest JAZZ</option>
+          <option>Crown Fest DEMBOW</option>
+          <option>Otros Eventos</option>
+        </select>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogo.html" class="active">Catálogo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="artistas.html">Artistas</a>
+        <a href="compra.html">Compra</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="aboutUs.html">FaQ</a>
+      </nav>
     </header>
 
-
     <main>
-
-        <div class="banner">
-            <img src="Resources/Logo Crown Fest.png">
+      <!-- Sección Hero con Póster (Adaptado a 'seccion-hero') -->
+      <div class="seccion-hero">
+        <div class="contenedor-poster">
+          <!-- Mantenemos tu imagen de banner -->
+          <img src="Resources/Banner_Rock.png" alt="Banner Evento" />
         </div>
-        <h1>Entradas</h1>
-        
-        <div class="contenedorCatalogo">
-            <div class="oferta">
-                <h3>Abono completo 3 días + Glamping</h3>
-                <input type="button" value="Comprar" class="botonComprar">
+        <!-- Cambiamos la clase del botón a 'btn-hero' -->
+        <a href="compra.html" class="btn-hero">Comprar Tickets</a>
+      </div>
+
+      <!-- Grid de Artistas Destacados -->
+      <div class="seccion-artistas-destacados">
+        <h2 class="titulo-seccion">Artistas Destacados</h2>
+
+        <div class="cuadricula-artistas">
+          
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <a href="https://open.spotify.com/artist/7EgAHTw2PMP7a1tAEtue89?si=QuBYqL-LTvSuj2QB1kv-OQ">
+                <img src="Resources/Artistas/1000mods.jpg" title="1000Mods by Ougabooga.com" alt="1000Mods band picture" />
+              </a>
             </div>
-            <div class="oferta">
-                <h3>Abono completo 3 días + Glamping</h3>
-                <input type="button" value="Comprar" class="botonComprar">
+            <h3>1000 Mods</h3>
+          </div>
+
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <a href="https://open.spotify.com/artist/5UzFfn3lNMWSm4PHCzBDi8?si=XrgoVMGgRUCThgU9n555bg">
+                <img src="Resources/Artistas/Colour_Haze.jpg" title="Colour Haze by 'Hayato_Yoshida' on 'Last.fm'" alt="Colour Haze Live Pic" />
+              </a>
             </div>
-            <div class="oferta">
-                <h3>Abono completo 3 días + Glamping</h3>
-                <input type="button" value="Comprar" class="botonComprar">
+            <h3>Colour Haze</h3>
+          </div>
+
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <a href="https://open.spotify.com/artist/4fPl9Aa0FMkATDiA7AnBNM?si=65TZxsXQTY-LdpCNZD1zFQ">
+                <img src="Resources/Artistas/Wine_Lips.jpg" title="Wine Lips by 'DistantApplause' on 'Last.fm'" alt="Wine Lips Band Picture" />
+              </a>
             </div>
-            <div class="oferta">
-                <h3>Abono completo 3 días + Glamping</h3>
-                <input type="button" value="Comprar" class="botonComprar">
+            <h3>Wine Lips</h3>
+          </div>
+
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <a href="https://open.spotify.com/artist/4DToQR3aKrHQSSRzSz8Nzt?si=vHFjwbdHS7K5torBlTfkSA">
+                <img src="Resources/Artistas/The_Hives.jpg" title="The Hives by 'oli0' on 'Last.fm'" alt="Wine Lips Band Picture" />
+              </a>
             </div>
+            <h3>The Hives</h3>
+          </div>
+
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <a href="https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1?si=k-4C1LwVS9SVelcSu-9osw">
+                <img src="Resources/Artistas/SOAD.jpg" title="System of a Down by 'molochthagod' on 'Last.fm'" alt="System of a Down Band Picture" />
+              </a>
+            </div>
+            <h3>System of a Down </h3>
+          </div>
+
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <a href="https://open.spotify.com/artist/05fG473iIaoy82BF1aGhL8?si=cYedeoTQQpCfxEe-NNodWA">
+                <img src="Resources/Artistas/Slipknot.jpg" title="Slipknot by 'jaimet0me' on 'Last.fm'" alt="Slipknot Band Picture" />
+              </a>
+            </div>
+            <h3>Slipknot</h3>
+          </div>
+
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <a href="https://open.spotify.com/artist/1cbImCPPJZ4AtF6WldzNDC?si=X4tqQG1jThGhwm5eLdQmsg">
+                <img src="Resources/Artistas/Mota_Blues.jpg" title="Mota Blues by 'jaimesiero' on 'Last.fm'" alt="Mota Blues Band Picture" />
+              </a>
+              </div>
+            <h3>Mota Blues</h3>
+          </div>
+
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <a href="https://open.spotify.com/artist/29Wmfm1CojrjQ3aQP0FI65?si=GzHJbuJURW6ZoAFGOwM9RA">
+                <img src="Resources/Artistas/All-Them-Witches.jpg" title="All Them Witches by 'Nabuchodonozz0r' on 'Last.fm'" alt="All Them Witches Band Picture" />
+              </a>
+              </div>
+            <h3>All Them Witches</h3>
+          </div>
+
         </div>
-
-
-        <!-- Introducción del Contenedor del Carrusel -->
-        <div class="carrusel">
-            <div class="seccionFotosCarrusel">
-                
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Logo Crown Fest.png" style="width:100%">
-                    <div class="textoImagen">Imagen Uno</div>
-                </div>
-
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Captura de pantalla (6).png" style="width:100%">
-                    <div class="textoImagen">Imagen Dos</div>
-                </div>
-
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Captura de pantalla (189).png" style="width:100%">
-                    <div class="textoImagen">Imagen Tres</div>
-                </div>
-
-                <!-- Botones de Anterior y Siguiente -->
-                <a class="diapoAnterior" onclick="moverDiapositiva(-1)">&#10094;</a>
-                <a class="diapoSiguiente" onclick="moverDiapositiva(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <!-- Los Puntitos del Carrusel -->
-            <div class="seccionPuntosCarrusel">
-                <span class="puntosCarrusel" onclick="diapositivaActual(1)"></span>
-                <span class="puntosCarrusel" onclick="diapositivaActual(2)"></span>
-                <span class="puntosCarrusel" onclick="diapositivaActual(3)"></span>
-            </div>
-        </div>
+      </div>
     </main>
 
-    
+    <!-- Footer Moderno -->
     <footer>
-        <div id="logoSection">
-            <a href="index.html">
-                <img id="headerLogo" src="../Plantilla_General/Resources/Logo Crown Fest.png" alt="Logo">
-            </a>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="Resources/Logo-Crown-Fest-Footer.png" alt="Logo Footer" />
         </div>
-        <nav id="footerNav">
-            <a href="index.html" id="footerNavButton">Home</a>
-            <a href="catalogo.html" id="footerNavButton">Catálogo</a>
-            <a href="servicios.html" id="footerNavButton">Servicios</a>
-            <a href="artistas.html" id="footerNavButton">Artistas</a>
-            <a href="compra.html" id="footerNavButton">Compra</a>
-            <a href="contacto.html" id="footerNavButton">Contacto</a>
-            <a href="faq.html" id="footerNavButton">FaQ</a>
 
-            <a href="https://www.instagram.com/">
-                <img id="logosFooter" src="Resources/Logos/Logo-Insta.svg" alt="Instagram">
-            </a>
-            <a href="https://es-es.facebook.com/">
-                <img id="logosFooter" src="Resources/Logos/Logo-Facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://x.com/">
-                <img id="logosFooter" src="Resources/Logos/Logo-Twitter.svg" alt="X">
-            </a>
-        </nav>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="artistas.html">Artistas</a>
+          <a href="compra.html">Tickets</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://instagram.com" class="social-icon-wrapper">
+            <img src="Resources/Instagram.png" alt="IG" />
+          </a>
+          <a href="https://facebook.com" class="social-icon-wrapper">
+            <img src="Resources/Facebook.png" alt="FB" />
+          </a>
+          <a href="https://x.com" class="social-icon-wrapper">
+            <img src="Resources/X.png" alt="X" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Crown Fest. Todos los derechos reservados.</span>
+        <a href="avisoLegal.html">Política de Privacidad</a>
+      </div>
     </footer>
-    <div class="copyrightSection">
-        <p>2025 CrownFest.com All Rights Reserved</p>
-        <a href="privacidad.html" id="privacyLink">Privacy Policy</a>
-        <a href="prueba.html" id="privacyLink">Terms of Service</a>
-    </div>
-</body>
+  </body>
 </html>
