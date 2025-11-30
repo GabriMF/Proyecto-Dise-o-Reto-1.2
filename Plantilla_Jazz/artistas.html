@@ -6,209 +6,191 @@
     <link rel="stylesheet" href="style.css">
     <script src="scripts/carrusel.js"></script>
     <title>Artistas</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    </head>
 <body onload="mostrarDiapositivas()">
+
     <header>
-        <div id="logoSection">
-            <a href="index.html">
-                <img id="headerLogo" src="../Plantilla_General/Resources/Logo Crown Fest.png" alt="Logo">
-            </a>
-            <div class="menuDesplegableEventos">
-                <input type="button" value="Otros Eventos">
-                <div class="contenedorOpcionesMenuDesplegable">
-                    <a id="opcionesEventos" href="../Plantilla_Rock/index.html">Rock</a>
-                    <a id="opcionesEventos" href="../Plantilla_Indie/index.html">Indie</a>
-                    <a id="opcionesEventos" href="../Plantilla_Pop/index.html">Pop</a>
-                    <a id="opcionesEventos" href="../Plantilla_Dembow/index.html">Dembow</a>
-                </div>
-            </div>
-        </div>
-        
-        <nav id="headerNav">
-            <a href="index.html" id="navButton">Home</a>
-            <a href="catalogo.html" id="navButton">Catálogo</a>
-            <a href="servicios.html" id="navButton">Servicios</a>
-            <a href="artistas.html" id="navButton">Artistas</a>
-            <a href="compra.html" id="navButton">Compra</a>
-            <a href="contacto.html" id="navButton">Contacto</a>
-            <a href="faq.html" id="navButton">FaQ</a>
-        </nav>
+      <div class="logo-container">
+        <a href="index3.html">
+          <img class="logo" src="Resources/Logos/logo-letras.png" alt="Logo" />
+        </a>
+        <select class="dropdown">
+          <option>Crown Fest POP</option>
+          <option>Crown Fest ROCK</option>
+          <option>Crown Fest INDIE</option>
+          <option>Crown Fest JAZZ</option>
+          <option>Crown Fest DEMBOW</option>
+          <option>Otros Eventos</option>
+        </select>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="artistas.html" class="active">Artistas</a>
+        <a href="compra.html">Compra</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="aboutUs.html">FaQ</a>
+      </nav>
     </header>
 
+    <div
+      class="hero-header"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('Resources/artistas/pexels-cottonbro-9418230.jpg');
+      "
+    >
+      <h1>Line Up 2025</h1>
+    </div>
 
-    <main>
-        <!-- Introducción del Contenedor del Carrusel -->
-        <div class="carrusel">
-            <div class="seccionFotosCarrusel">
+    <main class="seccion-artistas-destacados">
+
+          <!-- Texto Introductorio (Opcional, pero recomendado para SEO y diseño) -->
+      <div
+        style="
+          text-align: center;
+          max-width: 800px;
+          margin: 0 auto 50px auto;
+          color: #555;
+          padding: 0 20px;
+        "
+      >
+        <p>
+          Prepárate para la edición más ambiciosa de nuestra historia. Artistas de todas las edades y subgéneros en el mismo escenario. 
+        </p>
+      </div>
+
+            <div class="cuadricula-artistas">
                 
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Logo Crown Fest.png" style="width:100%">
-                    <div class="textoImagen">Imagen Uno</div>
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-clam-lo-1782448-3469692.jpg" style="width:100%" alt="Marlon Blue Keating">
+                    </div>
+                    <h3>Marlon "Blue" Keating</h3>
                 </div>
 
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Captura de pantalla (6).png" style="width:100%">
-                    <div class="textoImagen">Imagen Dos</div>
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-brett-sayles-1343331.jpg" style="width:100%" alt="Marlon">
+                    </div>
+                    <h3>Kira Moonfield</h3>
                 </div>
 
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Captura de pantalla (189).png" style="width:100%">
-                    <div class="textoImagen">Imagen Tres</div>
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-cottonbro-9418230.jpg" style="width:100%" alt="Marlon">
+                    </div>
+                    <h3>Alondra Velez Quartet</h3>
                 </div>
 
-                <!-- Botones de Anterior y Siguiente -->
-                <a class="diapoAnterior" onclick="moverDiapositiva(-1)">&#10094;</a>
-                <a class="diapoSiguiente" onclick="moverDiapositiva(1)">&#10095;</a>
-            </div>
-            <br>
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-anthonyshkraba-production-8043836.jpg" style="width:100%" alt="Marlon">
+                    </div>
+                    <h3>Magnus "Swing" Delacroix</h3>
+                </div>
 
-            <!-- Los Puntitos del Carrusel -->
-            <div class="seccionPuntosCarrusel">
-                <span class="puntosCarrusel" onclick="diapositivaActual(1)"></span>
-                <span class="puntosCarrusel" onclick="diapositivaActual(2)"></span>
-                <span class="puntosCarrusel" onclick="diapositivaActual(3)"></span>
-            </div>
-        </div>
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-dancelav-34924527.jpg" style="width:100%" alt="Marlon "Blue" Keating">
+                    </div>
+                    <h3>Priya Chandor Collective</h3>
+                </div>
+
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-felipacker-2860744.jpg" style="width:100%" alt="Marlon Blue Keating">
+                    </div>
+                    <h3>Otis Grantham</h3>
+                </div>
+                
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-lucaspezeta-2347916.jpg" style="width:100%" alt="Marlon "Blue" Keating">
+                    </div>
+                    <h3>Dante Holloway</h3>
+                </div>
+
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-mart-production-8107253.jpg" style="width:100%" alt="Marlon "Blue" Keating">
+                    </div>
+                    <h3>Theo Marcell</h3>
+                </div>
+
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-mufasa-1358816.jpg" style="width:100%" alt="Marlon Blue Keating">
+                    </div>
+                    <h3>Rafael Montague</h3>
+                </div>
+
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-victorfreitas-733767.jpg" style="width:100%" alt="Marlon Blue Keating">
+                    </div>
+                    <h3>Tobias "T-Bone" Armand</h3>
+                </div>
+
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-wayedoublerway-3857365.jpg" style="width:100%" alt="Marlon BlueKeating">
+                    </div>
+                    <h3>Paulo Stadford</h3>
+                </div>
+
+                <div class="tarjeta-artista">
+                    <div class="imgen-artista-wrapper">
+                        <img src="Resources/artistas/pexels-anthonyshkraba-production-8043750.jpg" style="width:100%" alt="Marlon "Blue" Keating">
+                    </div>
+                    <h3>Jerome "Jax" Halston</h3>
+                </div>
+
         
-
-        <!-- Introducción del Contenedor de las tarjetas -->
-        <div class="seccionTarjetas">
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 1</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 2</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 3</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 4</h2>
-                </a>
-            </div>
-        </div>
-         <div class="seccionTarjetas">
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 5</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 6</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 7</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 8</h2>
-                </a>
-            </div>
-        </div>
-         <div class="seccionTarjetas">
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 9</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 10</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 11</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 12</h2>
-                </a>
-            </div>
-        </div>
-         <div class="seccionTarjetas">
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 13</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 14</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 15</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="/Plantilla_General/prueba.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artista 16</h2>
-                </a>
-            </div>
         </div>
     </main>
 
     
     <footer>
-        <div id="logoSection">
-            <a href="index.html">
-                <img id="headerLogo" src="../Plantilla_General/Resources/Logo Crown Fest.png" alt="Logo">
-            </a>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="Resources/Logos/logo-marron.png" alt="Logo Footer" />
         </div>
-        <nav id="footerNav">
-            <a href="index.html" id="footerNavButton">Home</a>
-            <a href="catalogo.html" id="footerNavButton">Catálogo</a>
-            <a href="servicios.html" id="footerNavButton">Servicios</a>
-            <a href="artistas.html" id="footerNavButton">Artistas</a>
-            <a href="compra.html" id="footerNavButton">Compra</a>
-            <a href="contacto.html" id="footerNavButton">Contacto</a>
-            <a href="faq.html" id="footerNavButton">FaQ</a>
 
-            <a href="https://www.instagram.com/">
-                <img id="logosFooter" src="Resources/Logos/Logo-Insta.svg" alt="Instagram">
-            </a>
-            <a href="https://es-es.facebook.com/">
-                <img id="logosFooter" src="Resources/Logos/Logo-Facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://x.com/">
-                <img id="logosFooter" src="Resources/Logos/Logo-Twitter.svg" alt="X">
-            </a>
-        </nav>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="artistas.html">Artistas</a>
+          <a href="compra.html">Compra</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="aboutUs.html">Sobre Nosotros</a>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Instagram.png" alt="IG" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Logo-Facebook.svg" alt="FB" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/X.png" alt="X" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Crown Fest. Todos los derechos reservados.</span>
+        <a href="avisoLegal.html">Política de Privacidad</a>
+      </div>
     </footer>
-    <div class="copyrightSection">
-        <p>2025 CrownFest.com All Rights Reserved</p>
-        <a href="privacidad.html" id="privacyLink">Privacy Policy</a>
-        <a href="prueba.html" id="privacyLink">Terms of Service</a>
-    </div>
 </body>
 </html>

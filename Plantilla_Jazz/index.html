@@ -6,33 +6,38 @@
     <link rel="stylesheet" href="style.css">
     <script src="scripts/carrusel.js"></script>
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body onload="mostrarDiapositivas()">
 
+        <!-- Header Moderno -->
+
     <header>
-        <div id="logoSection">
-            <a href="index.html">
-                <img id="headerLogo" src="../Plantilla_General/Resources/Logo Crown Fest.png" alt="Logo">
+        <div class="logo-container">
+            <a href="index3.html">
+                <img id="headerLogo" class="logo" src="Resources/Logos/logo-letras.png" alt="Logo">
             </a>
-            <div class="menuDesplegableEventos">
-                <input type="button" value="Otros Eventos">
-                <div class="contenedorOpcionesMenuDesplegable">
-                    <a id="opcionesEventos" href="../Plantilla_Rock/index.html">Rock</a>
-                    <a id="opcionesEventos" href="../Plantilla_Indie/index.html">Indie</a>
-                    <a id="opcionesEventos" href="../Plantilla_Pop/index.html">Pop</a>
-                    <a id="opcionesEventos" href="../Plantilla_Dembow/index.html">Dembow</a>
-                </div>
+                <select class="dropdown">
+                    <option>Crown Fest POP</option>
+                    <option>Crown Fest ROCK</option>
+                    <option>Crown Fest INDIE</option>
+                    <option>Crown Fest JAZZ</option>
+                    <option>Crown Fest DEMBOW</option>
+                    <option>Otros Eventos</option>
+                </select>
             </div>
         </div>
         
-        <nav id="headerNav">
-            <a href="index.html" id="navButton">Home</a>
-            <a href="catalogo.html" id="navButton">Catálogo</a>
-            <a href="servicios.html" id="navButton">Servicios</a>
-            <a href="artistas.html" id="navButton">Artistas</a>
-            <a href="compra.html" id="navButton">Compra</a>
-            <a href="contacto.html" id="navButton">Contacto</a>
-            <a href="faq.html" id="navButton">FaQ</a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="artistas.html">Artistas</a>
+            <a href="compra.html">Compra</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="aboutUs.html">FaQ</a>
         </nav>
     </header>
 
@@ -40,114 +45,178 @@
     <main>
 
         <!-- Introducción del Contenedor del Carrusel -->
-        <div class="carrusel">
-            <div class="seccionFotosCarrusel">
-                
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Logo Crown Fest.png" style="width:100%">
-                    <div class="textoImagen">Imagen Uno</div>
-                </div>
-
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Captura de pantalla (6).png" style="width:100%">
-                    <div class="textoImagen">Imagen Dos</div>
-                </div>
-
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/Captura de pantalla (189).png" style="width:100%">
-                    <div class="textoImagen">Imagen Tres</div>
-                </div>
-
-                <!-- Botones de Anterior y Siguiente -->
-                <a class="diapoAnterior" onclick="moverDiapositiva(-1)">&#10094;</a>
-                <a class="diapoSiguiente" onclick="moverDiapositiva(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <!-- Los Puntitos del Carrusel -->
-            <div class="seccionPuntosCarrusel">
-                <span class="puntosCarrusel" onclick="diapositivaActual(1)"></span>
-                <span class="puntosCarrusel" onclick="diapositivaActual(2)"></span>
-                <span class="puntosCarrusel" onclick="diapositivaActual(3)"></span>
-            </div>
-        </div>
-        
-        <!-- Introducción del Contenedor de las tarjetas -->
-        <div class="seccionTarjetas">
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="artistas.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Artistas</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="compra.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Tickets</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="servicios.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>Servicios</h2>
-                </a>
-            </div>
-            <div class="tarjeta">
-                <a id="botonTarjeta" href="faq.html">
-                    <img class="imagenTarjeta" src="/Plantilla_General/Resources/Logo Crown Fest.png" alt="">
-                    <h2>FaQ</h2>
-                </a>
-            </div>
+        <div class="contenedor-carrusel">
+        <!-- Diapositiva 1 -->
+        <div class="slide fade">
+          <img
+            src="Resources/pexels-cottonbro-9419374.jpg"
+            class="tipo-fondo-completo"
+            alt="Banner Pop"
+          />
+          <!-- Cambiado 'textoImagen' por 'caption' -->
+          <div class="caption">Imagen Uno</div>
         </div>
 
-        <!-- Introduccion de contenedor "Contenido" -->
-        <a href="prueba.html" class="contenido">
-            <img src="Resources/Logo Crown Fest.png" alt="" class="imagenContenido">
-            <div class="textoContenido">
-                <h3>Novedades</h3>
-                <p>jkhgsdfjbsdkjfs jsdfbjsdbfksdbf kjsdbfkjdfbhksjdf ksjdfbkjsdbfkjdsf kjsdfbkjdfb</p>
+        <!-- Diapositiva 2 -->
+        <div class="slide fade">
+          <img
+            src="Resources/pexels-ken123films-2261952.jpg"
+            class="tipo-fondo-completo"
+            alt="Imagen Dos"
+          />
+          <div class="caption">Imagen Dos</div>
+        </div>
+
+        <!-- Diapositiva 3 -->
+        <div class="slide fade">
+          <img
+            src="Resources/pexels-yankrukov-9001995.jpg"
+            class="tipo-fondo-completo"
+            alt="Imagen Tres"
+          />
+          <div class="caption">Imagen Tres</div>
+        </div>
+
+        <!-- Botones -->
+        <a class="prev" onclick="moverDiapositiva(-1)">&#10094;</a>
+        <a class="next" onclick="moverDiapositiva(1)">&#10095;</a>
+      </div>
+
+      <!-- QUICK LINKS (Estilo Masonry) -->
+      <!-- Convertimos las tarjetas antiguas a imágenes de fondo completas -->
+      <div class="quick-links-container">
+        <div class="quick-links">
+          <a href="artistas.html" class="link-wrapper">
+            <div class="quick-link-card">
+              <!-- Usamos la imagen como fondo (card-bg-image) -->
+              <img
+                class="card-bg-image"
+                src="Resources/artistas/pexels-lucaspezeta-2347916.jpg"
+                alt="Artistas"
+              />
+              <h3>Artistas</h3>
             </div>
-        </a>
-        <a href="prueba.html" class="contenidoReversed">
-            <img src="Resources/Logo Crown Fest.png" alt="" class="imagenContenido">
-            <div class="textoContenido">
-                <h3>Novedades</h3>
-                <p>jkhgsdfjbsdkjfs jsdfbjsdbfksdbf kjsdbfkjdfbhksjdf ksjdfbkjsdbfkjdsf kjsdfbkjdfb</p>
+          </a>
+
+          <a href="compra.html" class="link-wrapper">
+            <div class="quick-link-card">
+              <img
+                class="card-bg-image"
+                src="Resources/pexels-alexandros-chatzidimos-2033032-3652799.jpg"
+                alt="Tickets"
+              />
+              <h3>Tickets</h3>
             </div>
-        </a>
+          </a>
+
+          <a href="servicios.html" class="link-wrapper">
+            <div class="quick-link-card">
+              <img
+                class="card-bg-image"
+                src="Resources/pexels-alan-caldwell-185375-587976.jpg"
+                alt="Servicios"
+              />
+              <h3>Servicios</h3>
+            </div>
+          </a>
+
+          <a href="aboutUs.html" class="link-wrapper">
+            <div class="quick-link-card">
+              <img
+                class="card-bg-image"
+                src="Resources/pexels-koolshooters-6621704.jpg"
+                alt="FaQ"
+              />
+              <h3>FaQ</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+        <!-- CONTENIDO (Estructura Zig-Zag) -->
+      <!-- Envolvemos todo en 'content-container' para el centrado -->
+      <div class="content-container">
+        <!-- Sección 1: Newsletter -->
+        <div class="content-section">
+          <div class="content-image-wrapper">
+            <!-- Wrapper necesario para el diseño moderno -->
+            <img
+              class="content-image"
+              src="Resources/pexels-oskelaq-1047796.jpg"
+              alt="Newsletter"
+            />
+          </div>
+          <div class="content-text">
+            <h2>Newsletter</h2>
+            <p>
+              ¡Mantente al día con Crown Fest! Suscríbete a nuestra newsletter y sé el primero en conocer todas las novedades: artistas confirmados, horarios, actividades y sorpresas exclusivas.
+            </p>
+            <p>
+              Disfruta de contenido especial pensado para todos los públicos, con un toque fresco y juvenil que captura el espíritu del festival.
+            </p>
+            <a href="#" class="btn-content">Conocer más</a>
+          </div>
+        </div>
+
+        <!-- Sección 2: Otras Ediciones -->
+        <!-- El CSS se encargará de poner la imagen a la derecha automáticamente -->
+        <div class="content-section">
+          <div class="content-image-wrapper">
+            <img
+              class="content-image"
+              src="Resources/pexels-reneterp-1327430.jpg"
+              alt="Otras Ediciones"
+            />
+          </div>
+          <div class="content-text">
+            <h2>Otras Ediciones</h2>
+            <p>
+              Crown Fest celebra la música en todas sus formas con cinco versiones únicas: Pop, Rock, Jazz, Indie y Dembow, cada una diseñada para sumergirte en su estilo propio. Disfruta de escenarios temáticos, artistas especializados y experiencias pensadas para los fans de cada género.
+
+            </p>
+            <a href="#" class="btn-content">Conocer más</a>
+          </div>
+        </div>
+      </div>
     </main>
 
     
     <footer>
-        <div id="logoSection">
-            <a href="index.html">
-                <img id="headerLogo" src="../Plantilla_General/Resources/Logo Crown Fest.png" alt="Logo">
-            </a>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="Resources/Logos/logo-marron.png" alt="Logo Footer" />
         </div>
-        <nav id="footerNav">
-            <a href="index.html" id="footerNavButton">Home</a>
-            <a href="catalogo.html" id="footerNavButton">Catálogo</a>
-            <a href="servicios.html" id="footerNavButton">Servicios</a>
-            <a href="artistas.html" id="footerNavButton">Artistas</a>
-            <a href="compra.html" id="footerNavButton">Compra</a>
-            <a href="contacto.html" id="footerNavButton">Contacto</a>
-            <a href="faq.html" id="footerNavButton">FaQ</a>
 
-            <a href="https://www.instagram.com/">
-                <img id="logosFooter" src="Resources/Logos/Logo-Insta.svg" alt="Instagram">
-            </a>
-            <a href="https://es-es.facebook.com/">
-                <img id="logosFooter" src="Resources/Logos/Logo-Facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://x.com/">
-                <img id="logosFooter" src="Resources/Logos/Logo-Twitter.svg" alt="X">
-            </a>
-        </nav>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="artistas.html">Artistas</a>
+          <a href="compra.html">Compra</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="aboutUs.html">Sobre Nosotros</a>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Logos/Logo-Insta.svg" alt="IG" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Logos/Logo-Facebook.svg" alt="FB" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Logos/Logo-Twitter.svg" alt="X" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Crown Fest. Todos los derechos reservados.</span>
+        <a href="avisoLegal.html">Política de Privacidad</a>
+      </div>
     </footer>
-    <div class="copyrightSection">
-        <p>2025 CrownFest.com All Rights Reserved</p>
-        <a href="privacidad.html" id="privacyLink">Privacy Policy</a>
-        <a href="prueba.html" id="privacyLink">Terms of Service</a>
-    </div>
+
+    <script src="./scripts/script.js" defer></script>
 </body>
 </html>
