@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/carrusel.js"></script>
+    <title>Catálogo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<body onload="mostrarDiapositivas()">
+
+   <header>
+      <div class="logo-container">
+        <a href="index3.html">
+          <img class="logo" src="Resources/Logos/logo-letras.png" alt="Logo" />
+        </a>
+        <select class="dropdown">
+          <option>Crown Fest POP</option>
+          <option>Crown Fest ROCK</option>
+          <option>Crown Fest INDIE</option>
+          <option>Crown Fest JAZZ</option>
+          <option>Crown Fest DEMBOW</option>
+          <option>Otros Eventos</option>
+        </select>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogo.html" class="active">Catálogo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="artistas.html">Artistas</a>
+        <a href="compra.html">Compra</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="aboutUs.html">FaQ</a>
+      </nav>
+    </header>
+
+
+    <main>
+      <!-- Sección Hero con Póster (Adaptado a 'seccion-hero') -->
+      <div class="seccion-hero">
+        <div class="contenedor-poster" style="width: 100%;">
+          <!-- Mantenemos tu imagen de banner -->
+          <img src="Resources/Снимок экрана 2025-11-30 в 22.26.32.png" alt="Banner Evento" />
+        </div>
+        <!-- Cambiamos la clase del botón a 'btn-hero' -->
+        <a href="compra.html" class="btn-hero">Comprar Tickets</a>
+      </div>
+
+      <!-- Grid de Artistas Destacados -->
+      <div class="seccion-artistas-destacados">
+        <h2 class="titulo-seccion">Artistas Destacados</h2>
+
+        <div class="cuadricula-artistas">
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <img src="Resources/artistas/pexels-cottonbro-9419245.jpg" alt="Taylor Swift" />
+            </div>
+            <h3>1º Alondra Verez Quartet</h3>
+          </div>
+
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <img src="Resources/artistas/pexels-clam-lo-1782448-3469692.jpg" alt="Marlon Blue Keating" />
+            </div>
+            <h3>2º Marlon "Blue" Keating</h3>
+          </div>
+
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <img src="Resources/artistas/pexels-mufasa-1358816.jpg" alt="Rafael Montague" />
+            </div>
+            <h3>3º Rafael Montague</h3>
+          </div>
+
+          <div class="tarjeta-artista">
+            <div class="imagen-artista-wrapper">
+              <img src="Resources/artistas/pexels-mart-production-8107253.jpg" alt="Rafael Montague" />
+            </div>
+            <h3>4º Theo Marcell</h3>
+          </div>
+
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="Resources/Logos/logo-marron.png" alt="Logo Footer" />
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="artistas.html">Artistas</a>
+          <a href="compra.html">Tickets</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Instagram.png" alt="IG" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Logo-Facebook.svg" alt="FB" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/X.png" alt="X" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Crown Fest. Todos los derechos reservados.</span>
+        <a href="avisoLegal.html">Política de Privacidad</a>
+      </div>
+    </footer>
+</body>
+</html>
