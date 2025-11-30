@@ -1,177 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crown Fest POP - Artistas</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" type="image/png" href="Resources/Icono Crown Fest.png">
-    <script src="scripts/carrusel.js"></script>
-
-</head>
-<body onload="mostrarDiapositivas()">
-    <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crown Fest POP - Artistas V3</title>
+    <!-- CSS en ruta relativa -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" type="image/png" href="Resources/Icono Crown Fest.png" />
+  </head>
+  <body>
+    <!-- Header Moderno -->
     <header>
-        <div class="logo-container">
-            <a href="index.html">
-                <img id="headerLogo" src="Resources/Logo Crown Fest.png" alt="Logo" height="60" width="80">
-            </a>
-            <select class="dropdown">
-                <option>Crown Fest POP</option>
-                <option>Crown Fest ROCK</option>
-                <option>Crown Fest INDIE</option>
-                <option>Crown Fest JAZZ</option>
-                <option>Crown Fest DEMBOW</option>
-                <option>Otros Eventos</option>
-            </select>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="artistas.html" class="active">Artistas</a>
-            <a href="compra.html">Compra</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="aboutUs.html">FaQ</a>
-        </nav>
+      <div class="logo-container">
+        <a href="index3.html">
+          <img class="logo" src="Resources/Logo Crown Fest.png" alt="Logo" />
+        </a>
+        <select class="dropdown">
+          <option>Crown Fest POP</option>
+          <option>Crown Fest ROCK</option>
+          <option>Crown Fest INDIE</option>
+          <option>Crown Fest JAZZ</option>
+          <option>Crown Fest DEMBOW</option>
+          <option>Otros Eventos</option>
+        </select>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="artistas.html" class="active">Artistas</a>
+        <a href="compra.html">Compra</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="aboutUs.html">FaQ</a>
+      </nav>
     </header>
 
-    <!-- Hero Carousel -->
-    <div class="carrusel">
-            <div class="seccionFotosCarrusel">
-                
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/ArtistasFt1.png" style="width:100%">
-                    <div class="textoImagen">Imagen Uno</div>
-                </div>
-
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/ArtistasFt2.png" style="width:100%">
-                    <div class="textoImagen">Imagen Dos</div>
-                </div>
-
-                <div class="imagenCarrussel fundido">
-                    <img src="Resources/ArtistasFt3.png" style="width:100%">
-                    <div class="textoImagen">Imagen Tres</div>
-                </div>
-
-                <!-- Botones de Anterior y Siguiente -->
-                <a class="diapoAnterior" onclick="moverDiapositiva(-1)">&#10094;</a>
-                <a class="diapoSiguiente" onclick="moverDiapositiva(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <!-- Los Puntitos del Carrusel -->
-            <div class="seccionPuntosCarrusel">
-                <span class="puntosCarrusel" onclick="diapositivaActual(1)"></span>
-                <span class="puntosCarrusel" onclick="diapositivaActual(2)"></span>
-                <span class="puntosCarrusel" onclick="diapositivaActual(3)"></span>
-            </div>
-        </div>
-    <!-- Artists Grid -->
-    <div class="artists-section">
-        <div class="artists-grid">
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/TaylorSwift.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>Taylor Swift</h3>
-            </div>
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/LadyGaga.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>Lady Gaga</h3>
-            </div>
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/PaulMcCartney.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>Paul McCartney</h3>
-            </div>
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/Adele.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>Adele</h3>
-            </div>
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/TheWeeknd.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>The Weeknd</h3>
-            </div>
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/BadBunny.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>Bad Bunny</h3>
-            </div>
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/Beyonce.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>Beyoncé</h3>
-            </div>
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/ArianaGrande.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>Ariana Grande</h3>
-            </div>
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/HarryStyles.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>Harry Styles</h3>
-            </div>
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/Rihanna.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>Rihanna</h3>
-            </div>
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/DuaLipa.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>Dua Lipa</h3>
-            </div>
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img id="artist-image-placeholder" src="Resources/OliviaRodrigo.png" alt="Logo" height="250" width="350">
-                </div>
-                <h3>Olivia Rodrigo</h3>
-            </div>
-            
-        </div>
+    <!-- Hero Header -->
+    <!-- Usamos una de las imágenes que tenías en el carrusel antiguo como fondo -->
+    <div
+      class="hero-header"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('Resources/ArtistasFt1.png');
+      "
+    >
+      <h1>Line Up 2025</h1>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <img id="footerLogo" src="Resources/Logo Crown Fest Footer.png" alt="Logo" height="110" width="120">
-            <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="artistas.html">Artistas</a>
-            <a href="compra.html">Compra</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="aboutUs.html">Sobre Nosotros</a>
-            </div>
-            <div class="social-links">
-                <a href="#" class="social-icon"><img id="instagram" src="Resources/Instagram.png" alt="instagram" height="30" width="50"></a>
-                <a href="#" class="social-icon"><img id="facebook" src="Resources/Facebook.png" alt="facebook" height="30" width="50"></a>
-                <a href="#" class="social-icon"><img id="twitter" src="Resources/X.png" alt="twitter" height="30" width="50"></a>
-            
-            </div>
-        </div>
-        <div class="footer-bottom">
-            Diseño de Interfaces Web
-            <a href="avisoLegal.html">Privacy Policy</a>
-        </div>
-    </footer>
+    <main class="seccion-artistas-destacados">
+      <!-- Texto Introductorio (Opcional, pero recomendado para SEO y diseño) -->
+      <div
+        style="
+          text-align: center;
+          max-width: 800px;
+          margin: 0 auto 50px auto;
+          color: #555;
+          padding: 0 20px;
+        "
+      >
+        <p>
+          Prepárate para la edición más ambiciosa de nuestra historia. Doce
+          cabezas de cartel internacionales que harán vibrar el escenario
+          principal.
+        </p>
+      </div>
 
-</body>
+      <!-- Grid de Artistas (Datos reales migrados) -->
+      <div class="cuadricula-artistas">
+        <!-- 1. Taylor Swift -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/TaylorSwift.png" alt="Taylor Swift" />
+          </div>
+          <h3>Taylor Swift</h3>
+        </div>
+
+        <!-- 2. Lady Gaga -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/LadyGaga.png" alt="Lady Gaga" />
+          </div>
+          <h3>Lady Gaga</h3>
+        </div>
+
+        <!-- 3. Paul McCartney -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/PaulMcCartney.png" alt="Paul McCartney" />
+          </div>
+          <h3>Paul McCartney</h3>
+        </div>
+
+        <!-- 4. Adele -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/Adele.png" alt="Adele" />
+          </div>
+          <h3>Adele</h3>
+        </div>
+
+        <!-- 5. The Weeknd -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/TheWeeknd.png" alt="The Weeknd" />
+          </div>
+          <h3>The Weeknd</h3>
+        </div>
+
+        <!-- 6. Bad Bunny -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/BadBunny.png" alt="Bad Bunny" />
+          </div>
+          <h3>Bad Bunny</h3>
+        </div>
+
+        <!-- 7. Beyoncé -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/Beyonce.png" alt="Beyoncé" />
+          </div>
+          <h3>Beyoncé</h3>
+        </div>
+
+        <!-- 8. Ariana Grande -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/ArianaGrande.png" alt="Ariana Grande" />
+          </div>
+          <h3>Ariana Grande</h3>
+        </div>
+
+        <!-- 9. Harry Styles -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/HarryStyles.png" alt="Harry Styles" />
+          </div>
+          <h3>Harry Styles</h3>
+        </div>
+
+        <!-- 10. Rihanna -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/Rihanna.png" alt="Rihanna" />
+          </div>
+          <h3>Rihanna</h3>
+        </div>
+
+        <!-- 11. Dua Lipa -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/DuaLipa.png" alt="Dua Lipa" />
+          </div>
+          <h3>Dua Lipa</h3>
+        </div>
+
+        <!-- 12. Olivia Rodrigo -->
+        <div class="tarjeta-artista">
+          <div class="imagen-artista-wrapper">
+            <img src="Resources/OliviaRodrigo.png" alt="Olivia Rodrigo" />
+          </div>
+          <h3>Olivia Rodrigo</h3>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Moderno -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="Resources/Logo Crown Fest Footer.png" alt="Logo Footer" />
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="artistas.html">Artistas</a>
+          <a href="compra.html">Tickets</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Instagram.png" alt="IG" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Facebook.png" alt="FB" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/X.png" alt="X" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Crown Fest. Todos los derechos reservados.</span>
+        <a href="avisoLegal3.html">Política de Privacidad</a>
+      </div>
+    </footer>
+  </body>
 </html>

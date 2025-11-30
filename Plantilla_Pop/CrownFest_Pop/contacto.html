@@ -1,91 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crown Fest POP - Contacto</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" type="image/png" href="Resources/Icono Crown Fest.png">
-</head>
-<body>
-    <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crown Fest POP - Contacto V3</title>
+    <!-- Enlace al estilo maestro -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" type="image/png" href="Resources/Icono Crown Fest.png" />
+  </head>
+  <body>
+    <!-- Header Moderno (con enlaces a la versión 3) -->
     <header>
-        <div class="logo-container">
-            <a href="index.html">
-                <img id="headerLogo" src="Resources/Logo Crown Fest.png" alt="Logo" height="60" width="100">
-            </a>
-            <select class="dropdown">
-                <option>Crown Fest POP</option>
-                <option>Crown Fest ROCK</option>
-                <option>Crown Fest INDIE</option>
-                <option>Crown Fest JAZZ</option>
-                <option>Crown Fest DEMBOW</option>
-                <option>Otros Eventos</option>
-            </select>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="artistas.html">Artistas</a>
-            <a href="compra.html">Compra</a>
-            <a href="contacto.html" class="active">Contacto</a>
-            <a href="aboutUs.html">FaQ</a>
-        </nav>
+      <div class="logo-container">
+        <a href="index3.html">
+          <img class="logo" src="Resources/Logo Crown Fest.png" alt="Logo" />
+        </a>
+        <select class="dropdown">
+          <option>Crown Fest POP</option>
+          <option>Crown Fest ROCK</option>
+          <option>Crown Fest INDIE</option>
+          <option>Crown Fest JAZZ</option>
+          <option>Crown Fest DEMBOW</option>
+          <option>Otros Eventos</option>
+        </select>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="artistas.html">Artistas</a>
+        <a href="compra.html">Compra</a>
+        <a href="contacto.html" class="active">Contacto</a>
+        <a href="aboutUs.html">FaQ</a>
+      </nav>
     </header>
 
-    <!-- Hero Carousel -->
-    <div class="carousel">
-        <div class="carousel-inner">
-            <img id="banner" src="Resources/Contacto.png" alt="Logo" height="300" width="500">
-        </div>
+    <!-- Hero Header -->
+    <!-- Usamos la imagen específica de Contacto que tenía tu compañero como fondo -->
+    <div
+      class="hero-header"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('Resources/Contacto.png');
+      "
+    >
+      <h1>Contáctanos</h1>
     </div>
 
-    <!-- Contact Section -->
-    <div class="contact-section">
-        <h1>Contáctanos</h1>
-        <div class="contact-form">
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" placeholder="Name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea id="message" placeholder="Escribe tu mensaje aquí..."></textarea>
-            </div>
-            <button type="button" class="btn-send">Send</button>
+    <!-- Formulario de Contacto (Estilo tarjeta centrada) -->
+    <main class="seccion-contacto">
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" placeholder="Tu nombre completo" />
         </div>
-    </div>
 
-    <!-- Footer -->
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" placeholder="tucorreo@ejemplo.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea
+            id="message"
+            placeholder="Escribe tu mensaje aquí..."
+          ></textarea>
+        </div>
+
+        <!-- Usamos la clase .btn-enviar definida en el CSS moderno -->
+        <button type="button" class="btn-enviar">Enviar Mensaje</button>
+      </form>
+    </main>
+
+    <!-- Footer Moderno -->
     <footer>
-        <div class="footer-content">
-            <img id="footerLogo" src="Resources/Logo Crown Fest Footer.png" alt="Logo" height="110" width="120">
-            <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="artistas.html">Artistas</a>
-            <a href="compra.html">Compra</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="aboutUs.html">Sobre Nosotros</a>
-            </div>
-            <div class="social-links">
-                <a href="#" class="social-icon"><img id="instagram" src="Resources/Instagram.png" alt="instagram" height="30" width="50"></a>
-                <a href="#" class="social-icon"><img id="facebook" src="Resources/Facebook.png" alt="facebook" height="30" width="50"></a>
-                <a href="#" class="social-icon"><img id="twitter" src="Resources/X.png" alt="twitter" height="30" width="50"></a>
-            
-            </div>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="Resources/Logo Crown Fest Footer.png" alt="Logo Footer" />
         </div>
-        <div class="footer-bottom">
-            Diseño de Interfaces Web
-            <a href="avisoLegal.html">Privacy Policy</a>
-        </div>
-    </footer>
 
-</body>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="artistas.html">Artistas</a>
+          <a href="compra.html">Tickets</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Instagram.png" alt="IG" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Facebook.png" alt="FB" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/X.png" alt="X" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Crown Fest. Todos los derechos reservados.</span>
+        <a href="avisoLegal.html">Política de Privacidad</a>
+      </div>
+    </footer>
+  </body>
 </html>
