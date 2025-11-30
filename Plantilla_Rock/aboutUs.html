@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crown Fest Rock - About Us & FAQ</title>
+    <!-- CSS en ruta relativa -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" type="image/png" href="Resources/Icono-Crown-Fest.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header Moderno -->
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="Resources/Logo Crown Fest.png" alt="Logo" />
+        </a>
+        <select class="dropdown">
+          <option>Crown Fest ROCK</option>
+          <option>Crown Fest POP</option>
+          <option>Crown Fest INDIE</option>
+          <option>Crown Fest JAZZ</option>
+          <option>Crown Fest DEMBOW</option>
+          <option>Otros Eventos</option>
+        </select>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="artistas.html">Artistas</a>
+        <a href="compra.html">Compra</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="aboutUs.html" class="active">FaQ</a>
+      </nav>
+    </header>
+
+    <!-- Hero Header -->
+    <!-- Usamos la imagen que estaba en el carrusel (FaQ.png) como fondo -->
+    <div
+      class="hero-header"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('Resources/FaQ.png');
+      "
+    >
+      <h1>Sobre Nosotros & FAQ</h1>
+    </div>
+
+    <main class="content-container">
+      <!-- Sección Sobre Nosotros (Estilo Zig-Zag) -->
+      <div class="content-section">
+        <div class="content-image-wrapper">
+          <!-- Imagen específica AboutUs.png -->
+          <img
+            class="content-image"
+            src="Resources/AboutUs.png"
+            alt="Sobre Crown Fest"
+          />
+        </div>
+        <div class="content-text">
+          <h2>Sobre Nosotros</h2>
+          <p>
+            Crown Fest nació hace varios años con la idea de crear un festival inclusivo,
+            vibrante y lleno de música para todos los públicos. Lo que comenzó como un
+            pequeño encuentro local de artistas se ha convertido en un evento reconocido por
+            su diversidad de géneros, desde pop y rock hasta jazz, indie y dembow. Cada
+            edición ha crecido en tamaño, experiencias y comunidad, manteniendo siempre el
+            espíritu joven y cercano que caracteriza al festival.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sección FAQ -->
+      <div class="seccion-faq">
+        <h2 class="titulo-faq">Preguntas Frecuentes</h2>
+        <p style="text-align: center; margin-bottom: 30px;">
+          Resolvemos tus dudas principales antes del festival.
+        </p>
+
+        <!-- Items FAQ -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            ¿Es posible devolver o cambiar mi entrada?
+            <span class="arrow">›</span>
+          </summary>
+          <p class="textoOcultoFaq">
+            Las entradas para Crown Fest son no reembolsables por motivos generales. Sin
+            embargo, puedes cambiar tu entrada por otra fecha o modalidad dentro de ciertos
+            plazos y condiciones específicas, dependiendo de la disponibilidad. Te
+            recomendamos revisar las políticas de entradas al momento de la compra y
+            conservar tu comprobante para cualquier gestión.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            ¿Puedo llevar comida y bebida al festival?
+            <span class="arrow">›</span>
+          </summary>
+          <p class="textoOcultoFaq">
+            Por motivos de seguridad, no se permite ingresar comida ni bebida del exterior. Sin
+            embargo, contamos con una amplia zona de food trucks con opciones para todos
+            los gustos, desde snacks hasta comidas completas, y áreas de descanso
+            cercanas.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            ¿El festival es accesible y seguro para todos los públicos?
+            <span class="arrow">›</span>
+          </summary>
+          <p class="textoOcultoFaq">
+            Sí. Crown Fest está diseñado para ser inclusivo y seguro. Contamos con un Punto
+            Violeta para asistencia ante cualquier situación de acoso o violencia, personal
+            capacitado en accesibilidad y zonas adaptadas para personas con movilidad
+            reducida.
+          </p>
+        </details>
+      </div>
+    </main>
+
+    <!-- Footer Moderno -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="Resources/Logo-Crown-Fest-Footer.png" alt="Logo Footer" />
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="artistas.html">Artistas</a>
+          <a href="compra.html">Tickets</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://instagram.com" class="social-icon-wrapper">
+            <img src="Resources/Instagram.png" alt="IG" />
+          </a>
+          <a href="https://facebook.com" class="social-icon-wrapper">
+            <img src="Resources/Facebook.png" alt="FB" />
+          </a>
+          <a href="https://x.com" class="social-icon-wrapper">
+            <img src="Resources/X.png" alt="X" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Crown Fest. Todos los derechos reservados.</span>
+        <a href="avisoLegal.html">Política de Privacidad</a>
+      </div>
+    </footer>
+  </body>
+</html>
