@@ -1,110 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crown Fest POP - Servicios</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" type="image/png" href="Resources/Icono Crown Fest.png">
-
-</head>
-<body>
-    <!-- Header -->
+    <!-- Enlazamos el estilo maestro -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" type="image/png" href="Resources/Icono Crown Fest.png" />
+  </head>
+  <body>
+    <!-- Header (Moderno) -->
     <header>
-        <div class="logo-container">
-            <a href="index.html">
-                <img id="headerLogo" src="Resources/Logo Crown Fest.png" alt="Logo" height="60" width="100">
-            </a>
-            <select class="dropdown">
-                <option>Crown Fest POP</option>
-                <option>Crown Fest ROCK</option>
-                <option>Crown Fest INDIE</option>
-                <option>Crown Fest JAZZ</option>
-                <option>Crown Fest DEMBOW</option>
-                <option>Otros Eventos</option>
-            </select>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="servicios.html" class="active">Servicios</a>
-            <a href="artistas.html">Artistas</a>
-            <a href="compra.html">Compra</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="aboutUs.html">FaQ</a>
-        </nav>
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="Resources/Logo Crown Fest.png" alt="Logo" />
+        </a>
+        <select class="dropdown">
+          <option>Crown Fest POP</option>
+          <option>Crown Fest ROCK</option>
+          <option>Crown Fest INDIE</option>
+          <option>Crown Fest JAZZ</option>
+          <option>Crown Fest DEMBOW</option>
+          <option>Otros Eventos</option>
+        </select>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="servicios.html" class="active">Servicios</a>
+        <a href="artistas.html">Artistas</a>
+        <a href="compra.html">Compra</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="aboutUs.html">FaQ</a>
+      </nav>
     </header>
 
-    <!-- Hero Carousel -->
-    <div class="carousel">
-        <div class="carousel-inner">
-            <img id="banner" src="Resources/Icono Crown Fest.png" alt="Logo" height="300" width="500">
-        </div>
+    <!-- Nuevo Hero Header (Banner de Título) -->
+    <div class="hero-header">
+      <h1>Nuestros Servicios</h1>
     </div>
 
-    <!-- Services Section -->
-    <div class="services-section">
-        <!-- Camping -->
-        <div class="service-item">
-            <div class="service-image">
-                <img id="service-image-placeholder" src="Resources/Icono Crown Fest.png" alt="Logo" height="200" width="250">
-            </div>
-            <div class="service-content">
-                <h2>Camping</h2>
-                <p>Lorem ipsum dolor sit amet et delectus accommodate his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos</p>
-                <a href="#" class="btn">Conocer más</a>
-            </div>
+    <!-- Sección de Servicios (Reutilizando la estructura de contenido Zig-Zag) -->
+    <main class="content-container">
+      <!-- 1. Camping -->
+      <div class="content-section">
+        <div class="content-image-wrapper">
+          <!-- Foto de tiendas de campaña -->
+          <img
+            class="content-image"
+            src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Zona de Camping"
+          />
         </div>
-
-        <!-- Comida -->
-        <div class="service-item">
-            <div class="service-image">
-                <img id="service-image-placeholder" src="Resources/Icono Crown Fest.png" alt="Logo" height="200" width="250">
-            </div>
-            <div class="service-content">
-                <h2>Comida</h2>
-                <p>Lorem ipsum dolor sit amet et delectus accommodate his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos</p>
-                <a href="#" class="btn">Conocer más</a>
-            </div>
+        <div class="content-text">
+          <h2>Camping y Glamping</h2>
+          <p>
+            Vive la experiencia completa del festival alojándote en nuestra zona
+            de acampada oficial. Disponemos de duchas de agua caliente,
+            seguridad 24h, puntos de carga para móviles y una zona de Glamping
+            con tiendas ya montadas para tu máxima comodidad.
+          </p>
+          <a href="#" class="btn-content">Reservar Camping</a>
         </div>
+      </div>
 
-        <!-- Puntos Violeta -->
-        <div class="service-item">
-            <div class="service-image">
-                <img id="service-image-placeholder" src="Resources/Icono Crown Fest.png" alt="Logo" height="200" width="250">
-            </div>
-            <div class="service-content">
-                <h2>Puntos Violeta</h2>
-                <p>Lorem ipsum dolor sit amet et delectus accommodate his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos</p>
-                <a href="#" class="btn">Conocer más</a>
-            </div>
+      <!-- 2. Comida (Gastronomía) -->
+      <div class="content-section">
+        <div class="content-image-wrapper">
+          <!-- Foto de Food Truck -->
+          <img
+            class="content-image"
+            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Zona Gastronómica"
+          />
         </div>
-    </div>
+        <div class="content-text">
+          <h2>Zona Gastronómica</h2>
+          <p>
+            Disfruta de una amplia variedad de Food Trucks con opciones para
+            todos los gustos: vegano, sin gluten, hamburguesas gourmet, cocina
+            asiática y mucho más. Recarga energías sin salir del recinto con
+            nuestra selección de chefs locales.
+          </p>
+          <a href="#" class="btn-content">Ver Menús</a>
+        </div>
+      </div>
 
-    <!-- Footer -->
+      <!-- 3. Puntos Violeta (Seguridad) -->
+      <div class="content-section">
+        <div class="content-image-wrapper">
+          <!-- Foto de ambiente seguro/amigable -->
+          <img
+            class="content-image"
+            src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Puntos Violeta"
+          />
+        </div>
+        <div class="content-text">
+          <h2>Puntos Violeta</h2>
+          <p>
+            Crown Fest es un espacio seguro para todos. Contamos con Puntos
+            Violeta atendidos por profesionales para la prevención y atención
+            ante cualquier tipo de acoso o violencia machista. Tu seguridad y
+            diversión son nuestra prioridad.
+          </p>
+          <a href="#" class="btn-content">Más Información</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer (Moderno) -->
     <footer>
-        <div class="footer-content">
-            <img id="footerLogo" src="Resources/Logo Crown Fest Footer.png" alt="Logo" height="110" width="120">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="artistas.html">Artistas</a>
-            <a href="compra.html">Compra</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="aboutUs.html">Sobre Nosotros</a>
-            </div>
-            <div class="social-links">
-                <a href="#" class="social-icon"><img id="instagram" src="Resources/Instagram.png" alt="instagram" height="30" width="50"></a>
-                <a href="#" class="social-icon"><img id="facebook" src="Resources/Facebook.png" alt="facebook" height="30" width="50"></a>
-                <a href="#" class="social-icon"><img id="twitter" src="Resources/X.png" alt="twitter" height="30" width="50"></a>
-            
-            </div>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="Resources/Logo Crown Fest Footer.png" alt="Logo Footer" />
         </div>
-        <div class="footer-bottom">
-            Diseño de Interfaces Web
-            <a href="avisoLegal.html">Privacy Policy</a>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="artistas.html">Artistas</a>
+          <a href="compra.html">Tickets</a>
+          <a href="contacto.html">Contacto</a>
         </div>
+
+        <div class="social-links">
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Instagram.png" alt="IG" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/Facebook.png" alt="FB" />
+          </a>
+          <a href="#" class="social-icon-wrapper">
+            <img src="Resources/X.png" alt="X" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Crown Fest. Todos los derechos reservados.</span>
+        <a href="avisoLegal.html">Política de Privacidad</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
