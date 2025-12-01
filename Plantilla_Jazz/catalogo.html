@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="scripts/carrusel.js"></script>
     <title>Catálogo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
-
-</head>
-<body onload="mostrarDiapositivas()">
-
-   <header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="mostrarDiapositivas()">
+    <header>
       <div class="logo-container">
         <a href="index3.html">
           <img class="logo" src="Resources/Logos/logo-letras.png" alt="Logo" />
         </a>
-        <!-- <select class="dropdown">
-          <option>Crown Fest POP</option>
-          <option>Crown Fest ROCK</option>
-          <option>Crown Fest INDIE</option>
-          <option>Crown Fest JAZZ</option>
-          <option>Crown Fest DEMBOW</option>
-          <option>Otros Eventos</option>
-        </select> -->
+
         <div class="menuDesplegableEventos">
-          <input type="button" value="Otros Eventos" class="dropdown">
+          <input type="button" value="Otros Eventos" class="dropdown" />
           <div class="contenedorOpcionesMenuDesplegable">
             <a id="opcionesEventos" href="../Plantilla_Rock/index.html">Rock</a>
-            <a id="opcionesEventos" href="../Plantilla_Indie/index.html">Indie</a>
-            <a id="opcionesEventos" href="../Plantilla_Pop/CrownFest_Pop/index.html">Pop</a>
-            <a id="opcionesEventos" href="../Plantilla_Dembow/app/index.html">Dembow</a>
+            <a id="opcionesEventos" href="../Plantilla_Indie/index.html"
+              >Indie</a
+            >
+            <a
+              id="opcionesEventos"
+              href="../Plantilla_Pop/CrownFest_Pop/index.html"
+              >Pop</a
+            >
+            <a id="opcionesEventos" href="../Plantilla_Dembow/app/index.html"
+              >Dembow</a
+            >
           </div>
         </div>
       </div>
@@ -47,13 +49,12 @@
       </nav>
     </header>
 
-
     <main>
       <!-- Sección Hero con Póster (Adaptado a 'seccion-hero') -->
       <div class="seccion-hero">
-        <div class="contenedor-poster" style="width: 100%;">
+        <div class="contenedor-poster" style="width: 100%">
           <!-- Mantenemos tu imagen de banner -->
-          <img src="Resources/Снимок экрана 2025-11-30 в 22.26.32.png" alt="Banner Evento" />
+          <img src="Resources/Banner.png" alt="Banner Evento" />
         </div>
         <!-- Cambiamos la clase del botón a 'btn-hero' -->
         <a href="compra.html" class="btn-hero">Comprar Tickets</a>
@@ -66,32 +67,45 @@
         <div class="cuadricula-artistas">
           <div class="tarjeta-artista">
             <div class="imagen-artista-wrapper">
-              <img src="Resources/artistas/pexels-cottonbro-9419245.jpg" alt="Taylor Swift" />
+              <img
+                src="Resources/artistas/pexels-cottonbro-9419245.jpg"
+                alt="Taylor Swift"
+              />
             </div>
             <h3>1º Alondra Verez Quartet</h3>
           </div>
 
           <div class="tarjeta-artista">
             <div class="imagen-artista-wrapper">
-              <img src="Resources/artistas/pexels-clam-lo-1782448-3469692.jpg" alt="Marlon Blue Keating" />
+              <img
+                src="Resources/artistas/pexels-clam-lo-1782448-3469692.jpg"
+                alt="Marlon Blue Keating"
+              />
             </div>
             <h3>2º Marlon "Blue" Keating</h3>
           </div>
 
           <div class="tarjeta-artista">
             <div class="imagen-artista-wrapper">
-              <img src="Resources/artistas/pexels-mufasa-1358816.jpg" alt="Rafael Montague" />
+              <img
+                src="Resources/artistas/pexels-mufasa-1358816.jpg"
+                alt="Rafael Montague"
+              />
             </div>
             <h3>3º Rafael Montague</h3>
           </div>
 
           <div class="tarjeta-artista">
             <div class="imagen-artista-wrapper">
-              <img src="Resources/artistas/pexels-mart-production-8107253.jpg" alt="Rafael Montague" />
+              <img
+                src="Resources/artistas/pexels-mart-production-8107253.jpg"
+                alt="Rafael Montague"
+              />
             </div>
             <h3>4º Theo Marcell</h3>
           </div>
-
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer-content">
@@ -110,13 +124,13 @@
 
         <div class="social-links">
           <a href="#" class="social-icon-wrapper">
-            <img src="Resources/Instagram.png" alt="IG" />
+            <img src="Resources/Logos/Logo-Insta.svg" alt="IG" />
           </a>
           <a href="#" class="social-icon-wrapper">
-            <img src="Resources/Logo-Facebook.svg" alt="FB" />
+            <img src="Resources/Logos/Logo-Facebook.svg" alt="FB" />
           </a>
           <a href="#" class="social-icon-wrapper">
-            <img src="Resources/X.png" alt="X" />
+            <img src="Resources/Logos/Logo-Twitter.svg" alt="X" />
           </a>
         </div>
       </div>
@@ -126,5 +140,5 @@
         <a href="avisoLegal.html">Política de Privacidad</a>
       </div>
     </footer>
-</body>
+  </body>
 </html>

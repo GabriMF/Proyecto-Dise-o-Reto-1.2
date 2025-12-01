@@ -1,9 +1,8 @@
-
 /*-------------------------------------------------------------------------------
                               Ajustes Generales
 ---------------------------------------------------------------------------------*/
 :root {
-  --color-principal-texto: #a56435;
+  --color-principal-texto: #995c35;
   --color-fondo-principal: #fff;
   --color-gris-claro: #d9d9d9;
   --color-acento-principal: #a56435;
@@ -23,21 +22,20 @@
   padding: 0;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-fondo-principal);
-    font-family: "Stack Sans Notch";
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-fondo-principal);
+  font-family: "Stack Sans Notch";
 }
-
 
 /*-------------------------------------------------------------------------------
                                 header
 ---------------------------------------------------------------------------------*/
 
-header{
+header {
   background-color: var(--color-fondo-principal);
   padding: 20px 50px;
   display: flex;
@@ -48,7 +46,6 @@ header{
   z-index: 100;
   width: 100%;
 }
-
 
 .logo-container {
   display: flex;
@@ -72,17 +69,16 @@ header{
   cursor: pointer;
   color: var(--color-principal-texto);
 }
-.contenedorOpcionesMenuDesplegable{
+.contenedorOpcionesMenuDesplegable {
   display: none;
   position: absolute;
-  overflow: auto; 
+  overflow: auto;
 }
-.menuDesplegableEventos:hover .contenedorOpcionesMenuDesplegable{
+.menuDesplegableEventos:hover .contenedorOpcionesMenuDesplegable {
   display: flex;
   flex-direction: column;
-  
 }
-#opcionesEventos{
+#opcionesEventos {
   font-family: "Metal Mania", system-ui;
   border-radius: 15px;
   background-color: var(--color-gris-medio);
@@ -114,7 +110,6 @@ nav a.active {
   background-color: var(--color-acento-principal);
   color: var(--color-fondo-principal);
 }
-
 
 /*-------------------------------------------------------------------------------
                                 Carrusel
@@ -374,25 +369,23 @@ nav a.active {
   transform: translateY(-3px);
 }
 
-
 /* --- CATÁLOGO: SECCIÓN HERO --- */
 .seccion-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #222;
+  background-color: var(--color-acento-principal);
   padding: 60px 20px;
   text-align: center;
   margin-bottom: 50px;
 }
 
 .contenedor-poster {
-  max-width: 800px;
   width: 100%;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 40px var(--color-acento-transparente);
   margin-bottom: 30px;
 }
 
@@ -440,7 +433,7 @@ nav a.active {
 
 .cuadricula-artistas {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 30px;
 }
 
@@ -471,7 +464,6 @@ nav a.active {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
-  display: block;
 }
 
 .tarjeta-artista:hover .imagen-artista-wrapper img {
@@ -567,8 +559,6 @@ nav a.active {
   background-color: var(--color-acento-principal);
 }
 
-
-
 /*-------------------------------------------------------------------------------
                                 Contenido
 ---------------------------------------------------------------------------------*/
@@ -657,7 +647,7 @@ nav a.active {
   transform: translateY(-3px);
 }
 
-.contenido{
+.contenido {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -665,7 +655,7 @@ nav a.active {
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
-.contenidoReversed{
+.contenidoReversed {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -674,13 +664,10 @@ nav a.active {
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
-.imagenContenido{
+.imagenContenido {
   max-width: 20vw;
   margin: 2vh 2vw 2vh 2vw;
 }
-
-
-
 
 /*-------------------------------------------------------------------------------
                                 Formulario
@@ -830,8 +817,6 @@ nav a.active {
   color: #555;
   text-align: justify;
 }
-
-
 
 /*-------------------------------------------------------------------------------
                                 Footer

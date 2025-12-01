@@ -65,17 +65,16 @@ header {
   cursor: pointer;
   color: var(--color-principal-texto);
 }
-.contenedorOpcionesMenuDesplegable{
+.contenedorOpcionesMenuDesplegable {
   display: none;
   position: absolute;
-  overflow: auto; 
+  overflow: auto;
 }
-.menuDesplegableEventos:hover .contenedorOpcionesMenuDesplegable{
+.menuDesplegableEventos:hover .contenedorOpcionesMenuDesplegable {
   display: flex;
   flex-direction: column;
-  
 }
-#opcionesEventos{
+#opcionesEventos {
   font-family: "Metal Mania", system-ui;
   border-radius: 15px;
   background-color: var(--color-gris-medio);
